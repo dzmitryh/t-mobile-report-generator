@@ -23,5 +23,6 @@ fun main(args: Array<String>) {
 }
 
 fun getEnvVarValue(envVarName: String): String {
+    println("env var name: " + envVarName)
     return if (System.getenv(envVarName).isNullOrEmpty()) "secret" else System.getenv(envVarName)
 }
